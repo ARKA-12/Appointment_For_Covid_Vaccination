@@ -1,6 +1,9 @@
 package com.codeme.springboot.CovidVaccination.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Admin {
@@ -10,7 +13,10 @@ public class Admin {
     //define toString method
     //provide all annotations
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int adminId;
+    
     private String name;
     private String mobileNo;
     private String email;

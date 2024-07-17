@@ -1,14 +1,10 @@
 package com.codeme.springboot.CovidVaccination.model;
 
-import jakarta.persistence.Entity;
-
-@Entity
 public class AdharCard {
     //define fields
     //define constructor
     //define getter/setter
-    //define toString method
-    //provide all annotations
+    
 
     private long adharNo;
 
@@ -24,6 +20,14 @@ public class AdharCard {
 
     public void setAdharNo(long adharNo) {
         this.adharNo = adharNo;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("AdharCard{");
+        sb.append("adharNo=").append(adharNo);
+        sb.append('}');
+        return sb.toString();
     }
 
 

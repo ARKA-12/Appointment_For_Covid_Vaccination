@@ -15,7 +15,7 @@ public class VaccineCount {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int VaccineCountId;
+    private int vaccineCountId;
     
     private int quantity;
     private double price;
@@ -25,20 +25,20 @@ public class VaccineCount {
    
    
 
-    public VaccineCount(int vaccineCountId, int quantity, double price) {
-        VaccineCountId = vaccineCountId;
+    public VaccineCount( int quantity, double price) {
+      
         this.quantity = quantity;
         this.price = price;
     }
 
 
     public int getVaccineCountId() {
-        return VaccineCountId;
+        return vaccineCountId;
     }
 
 
     public void setVaccineCountId(int vaccineCountId) {
-        VaccineCountId = vaccineCountId;
+        this.vaccineCountId = vaccineCountId;
     }
     
     public int getQuantity() {

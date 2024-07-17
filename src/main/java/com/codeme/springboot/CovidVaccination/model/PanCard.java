@@ -1,15 +1,12 @@
 package com.codeme.springboot.CovidVaccination.model;
 
-import jakarta.persistence.Entity;
 
-@Entity
 public class PanCard {
 
     //define fields
     //define constructor
     //define getter/setter
-    //define toString method
-    //provide all annotations
+    
 
     private String panCard;
 
@@ -25,6 +22,15 @@ public class PanCard {
 
     public void setPannCard(String panCard) {
         this.panCard = panCard;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("PanCard{");
+        sb.append("panCard=").append(panCard);
+        sb.append('}');
+        return sb.toString();
     }
 
     
