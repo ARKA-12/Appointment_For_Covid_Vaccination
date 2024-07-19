@@ -12,9 +12,10 @@ import com.codeme.springboot.CovidVaccination.model.User;
 public class UserServiceImpl implements UserService {
 
     //define the JPA repository
-    @Autowired
+    
     public UserRepository userDao;
-
+    
+    @Autowired
     //contructor dependency injection
     public UserServiceImpl(UserRepository userDao) {
         this.userDao = userDao;

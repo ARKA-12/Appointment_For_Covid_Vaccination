@@ -71,6 +71,10 @@ public class User {
         return sb.toString();
     }
 
+    public User registerUser(User user) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     
 
 }
